@@ -5,12 +5,15 @@
 ### 1. Clone the project
 
 ### 2. Run the project
+
+#### with yarn
 ```shell
-npm i
-npm start
+yarn install
+yarn start
 ```
 
-### 3. BUild
+#### with npm
 ```shell
-npm run build
+npm install
+npm start
 ```
