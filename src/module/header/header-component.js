@@ -1,21 +1,17 @@
 import React, { Component } from 'react';
-import ParticlesBg  from "particles-bg";
-import darkBg from '../assets/img/bg-header.jpg'
+import darkBg from '../../assets/img/bg-header.jpg'
 
-class Header extends Component {
-  render() {
-
-    if(this.props.data){
-       var project = this.props.data.project;
-       var github = this.props.data.github;
-      var name = this.props.data.name;
-      var description= this.props.data.description;
-      var city= this.props.data.address.city;
-      var networks= this.props.data.social.map(function(network){
+const HeaderComponent = (props) => {
+    if(props.data){
+       var project = props.data.project;
+       var github = props.data.github;
+      var name = props.data.name;
+      var description= props.data.description;
+      var city= props.data.address.city;
+      var networks= props.data.social.map(function(network){
         return <li key={network.name}><a href={network.url}><i className={network.className}></i></a></li>
       })
     }
-
     return (
       <header id="home" style={{ background: `url(${darkBg}) no-repeat center center fixed` }}>
       <nav id="nav-wrap">
@@ -26,7 +22,7 @@ class Header extends Component {
             <li className="current"><a className="smoothscroll" href="#home">Home</a></li>
             <li><a className="smoothscroll" href="#about">About</a></li>
 	         <li><a className="smoothscroll" href="#resume">Resume</a></li>
-            <li><a className="smoothscroll" href="#portfolio">Works</a></li>
+            <li><a className="smoothscroll" href="#portfolio">Projects</a></li>
             <li><a className="smoothscroll" href="#contact">Contact</a></li>
          </ul>
       </nav>
@@ -46,7 +42,5 @@ class Header extends Component {
 
    </header>
     );
-  }
 }
-
-export default Header;
+export default HeaderComponent;
