@@ -1,141 +1,129 @@
 {
   "main": {
-    "name":"Hello, I'm Fatan Aminullah",
-    "description":"I am a web and mobile development engineer and I use react to develop pages",
-    "image":"profilepic.png",
+    "name": "Hello, I'm Fatan Aminullah",
+    "description": "Frontend Developer at PT Emporia Digital Raya",
+    "image": "profilepic.png",
     "darkBg": "testimonials-bg.jpg",
-    "bio":"Hello my name is Fatan Aminullah. I'm a 20 years old Software Developer. Now i'm working at PT. Anabatic Technologies as a Frontend Developer. I'm using ReactJS to build a Web Application and React Native to build a Mobile Application. I started my journey as a Professional Programmer in 2019, but I've started introducing myself to programming since I was in junior high school ",
-    "contactmessage":"Here is where you should write your message to readers to have them get in contact with you.",
+    "bio": "Hello my name is Fatan Aminullah. I'm a 20 years old Software Developer. Now i'm working at PT. Emporia Digital as a Frontend Developer. I'm using ReactJS to build a Web Application and React Native to build a Mobile Application. I started my journey as a Professional Programmer in 2019, but I've started introducing myself to programming since I was in junior high school ",
+    "contactmessage": "Want to discuss something? Feel free to contact me!",
     "email": "fatan.aminullah.j@gmail.com",
     "phone": "082113705067",
-    "address":{
-      "street":"Makom Raya 38",
-      "city":"Bekasi",
-      "state":"Indonesia",
-      "zip": "17421"
+    "address": {
+      "city": "Jakarta",
+      "state": "Indonesia"
     },
-    "website": "http://www.timbakerdev.com",
-    "resumedownload":"http://timbakerdev.com",
-    "social":[
+    "website": "http://www.fatanaminullah.com",
+    "resumedownload": "http://fatanaminullah.com",
+    "social": [
       {
-        "name":"facebook",
-        "url":"https://web.facebook.com/fatan.aminullah",
-        "className":"fa fa-facebook"
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/in/fatan-aminullah-9172b718b/",
+        "className": "fa fa-linkedin"
       },
       {
-        "name":"twitter",
-        "url":"https://twitter.com/FatanAA_",
-        "className":"fa fa-twitter"
+        "name": "instagram",
+        "url": "https://www.instagram.com/fatanamminullah/",
+        "className": "fa fa-instagram"
       },
       {
-        "name":"linkedin",
-        "url":"https://www.linkedin.com/in/fatan-aminullah-9172b718b/",
-        "className":"fa fa-linkedin"
-      },
-      {
-        "name":"instagram",
-        "url":"https://www.instagram.com/fatanamminullah/",
-        "className":"fa fa-instagram"
-      },
-      {
-        "name":"github",
-        "url":"https://github.com/Fatanaminullah",
-        "className":"fa fa-github"
+        "name": "github",
+        "url": "https://github.com/Fatanaminullah",
+        "className": "fa fa-github"
       }
     ]
   },
-  "resume":{
-    "skillmessage":"Here you can create a short write-up of your skills to show off to employers",
-    "education":[
+  "resume": {
+    "skillmessage": "Here you can create a short write-up of your skills to show off to employers",
+    "education": [
       {
-        "school":"Mercu Buana University",
-        "degree":"Information System",
-        "graduated":"February 2020",
-        "description":"Describe your experience at school, what you learned, what useful skills you have acquired etc."
+        "school": "Mercu Buana University",
+        "degree": "Information System",
+        "graduated": "February 2020",
+        "description": "Describe your experience at school, what you learned, what useful skills you have acquired etc."
       },
       {
-        "school":"Purwadhika Startup and Coding School",
-        "degree":"Web and Mobile Development",
-        "graduated":"January 2019 - June 2019",
-        "description":"Describe your experience at school, what you learned, what useful skills you have acquired etc."
+        "school": "Purwadhika Startup and Coding School",
+        "degree": "Web and Mobile Development",
+        "graduated": "January 2019 - June 2019",
+        "description": "Describe your experience at school, what you learned, what useful skills you have acquired etc."
       },
       {
-        "school":"Nordic School of Technologies",
-        "degree":"Java Android Fundamental",
-        "graduated":"August 2018 - December 2018",
-        "description":"Describe your experience at school, what you learned, what useful skills you have acquired etc."
+        "school": "Nordic School of Technologies",
+        "degree": "Java Android Fundamental",
+        "graduated": "August 2018 - December 2018",
+        "description": "Describe your experience at school, what you learned, what useful skills you have acquired etc."
       }
     ],
-    "work":[
+    "work": [
       {
-        "company":"PT. Anabatic Technologies",
-        "title":"Frontend Developer",
-        "years":"July 2010 - Present",
-        "description":"Working in a team to build client side of Web Application and Mobile Application"
+        "company": "PT. Emporia Digital Raya",
+        "title": "Frontend Developer",
+        "years": "August 2020 - Present",
+        "description": "Working in a team to build client side of Web Application and Mobile Application"
+      },
+      {
+        "company": "PT. Anabatic Technologies",
+        "title": "Frontend Developer",
+        "years": "July 2019 - July 2020",
+        "description": "Working in a team to build client side of Web Application and Mobile Application"
       }
     ],
-    "skills":[
+    "skills": [
       {
-        "name":"ReactJs",
-        "level":"90%"
+        "name": "ReactJs",
+        "level": "90%"
       },
       {
-        "name":"React Native",
-        "level":"90%"
+        "name": "React Native",
+        "level": "90%"
       },
       {
-        "name":"HTML",
-        "level":"100%"
+        "name": "HTML",
+        "level": "100%"
       },
       {
-        "name":"CSS",
-        "level":"100%"
+        "name": "CSS",
+        "level": "100%"
       },
       {
-        "name":"MySQL",
-        "level":"70%"
+        "name": "MySQL",
+        "level": "70%"
       },
       {
-        "name":"MongoDB",
-        "level":"60%"
+        "name": "MongoDB",
+        "level": "60%"
       },
       {
-        "name":"Java (Android)",
-        "level":"55%"
+        "name": "Java (Android)",
+        "level": "55%"
       }
     ]
   },
-  "portfolio":{
+  "portfolio": {
     "projects": [
       {
-        "title":"Canadian Wanderlust",
-        "category":"My Travel Blog for my post-university travels",
-        "image":"canadian-wanderlust.jpg",
-        "url":"https://www.canadianwanderlust.com"
+        "title": "Pocket Web Admin",
+        "category": "Website for Pocket Web Admin",
+        "image": "pocket-web.png",
+        "type": "web"
       },
       {
-        "title":"Fury Fighting Gear",
-        "category":"(offline now) A fighting gear company I started",
-        "image":"fury-fighting-gear.jpg",
-        "url":"http://www.timbakerdev.com"
+        "title": "IKI Bills Dashboard",
+        "category": "Website for IKI Bills Dashboard",
+        "image": "ikibill-dashboard.png",
+        "type": "web"
       },
       {
-        "title":"Original Thai Food",
-        "category":"Website I built for a restaurant I like in Thailand",
-        "image":"original-thai-food.jpg",
-        "url":"http://www.timbakerdev.com/originalthaifood.github.io"
+        "title": "IKI Aku",
+        "category": "IKI Aku mobile apps with react native",
+        "image": "iki-aku-collapsed.png",
+        "type": "mobile"
       },
       {
-        "title":"Resume Website",
-        "category":"A React based resume website template",
-        "image":"resume-website.jpg",
-        "url":"http://www.timbakerdev.com"
-      },
-      {
-        "title":"Smirkspace",
-        "category":"(MVP Only) A React and Meteor based chat University project.",
-        "image":"smirkspace.jpg",
-        "url":"http://www.smirkspace.com"
+        "title": "IKI Mitra",
+        "category": "IKI Mitra mobile apps with react native",
+        "image": "iki-mitra-collapsed.png",
+        "type": "mobile"
       }
     ]
   }
