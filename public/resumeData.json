@@ -13,7 +13,7 @@
       "state": "Indonesia"
     },
     "website": "http://www.fatanaminullah.com",
-    "resumedownload": "http://fatanaminullah.com",
+    "resumedownload": "/files/CV_FATAN_AMINULLAH.pdf",
     "social": [
       {
         "name": "linkedin",
@@ -38,20 +38,35 @@
       {
         "school": "Mercu Buana University",
         "degree": "Information System",
-        "graduated": "February 2020",
-        "description": "Describe your experience at school, what you learned, what useful skills you have acquired etc."
+        "graduated": "February 2020 - Present",
+        "description": [
+          "Database System",
+          "Programming",
+          "Mathematic Logic",
+          "Bussiness and Management",
+          "Management of Information System"
+        ]
       },
       {
         "school": "Purwadhika Startup and Coding School",
         "degree": "Web and Mobile Development",
         "graduated": "January 2019 - June 2019",
-        "description": "Describe your experience at school, what you learned, what useful skills you have acquired etc."
+        "description": [
+          "Javascript Programming Fundamental",
+          "Frontend Development with React JS",
+          "Backend Development with NodeJS and ExpressJS",
+          "Mobile Development with React Native"
+        ]
       },
       {
         "school": "Nordic School of Technologies",
         "degree": "Java Android Fundamental",
         "graduated": "August 2018 - December 2018",
-        "description": "Describe your experience at school, what you learned, what useful skills you have acquired etc."
+        "description": [
+          "Programming Fundamental with Java Programming Language",
+          "OOP (Object Oriented Programming)",
+          "Android Software Development"
+        ]
       }
     ],
     "work": [
@@ -59,13 +74,13 @@
         "company": "PT. Emporia Digital Raya",
         "title": "Frontend Developer",
         "years": "August 2020 - Present",
-        "description": "Working in a team to build client side of Web Application and Mobile Application"
+        "description": "Working in a team to build Web and Mobile Application using ReactJS and React Native Framework. Implement a Responsive Web and Mobile Application for modern banking application based on latest market best practices"
       },
       {
         "company": "PT. Anabatic Technologies",
         "title": "Frontend Developer",
         "years": "July 2019 - July 2020",
-        "description": "Working in a team to build client side of Web Application and Mobile Application"
+        "description": "Working in a team to build Web and Mobile Application using ReactJS and React Native Framework. Implement a Responsive Web and Mobile Application for modern financial technology application based on latest market best practices"
       }
     ],
     "skills": [
