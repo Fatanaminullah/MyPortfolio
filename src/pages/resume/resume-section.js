@@ -1,6 +1,25 @@
+import { Carousel } from "antd";
 import React from "react";
+import ReactIcon from "../../assets/img/react-icon.png";
+import AndroidIcon from "../../assets/img/android-icon.png";
+import CssIcon from "../../assets/img/css-icon.png";
+import GitIcon from "../../assets/img/git-icon-2.png";
+import HtmlIcon from "../../assets/img/html-icon.png";
+import JavascriptIcon from "../../assets/img/javascript-icon.png";
+import NodejsIcon from "../../assets/img/nodejs-icon.png";
+import AliceCarousel from "react-alice-carousel";
+import "react-alice-carousel/lib/alice-carousel.css";
 
 const ResumeComponent = ({ data }) => {
+  const items = [
+    <img style={{ height: 150 }} src={ReactIcon} />,
+    <img style={{ height: 150 }} src={AndroidIcon} />,
+    <img style={{ height: 150 }} src={CssIcon} />,
+    <img style={{ height: 150 }} src={GitIcon} />,
+    <img style={{ height: 150 }} src={HtmlIcon} />,
+    <img style={{ height: 150 }} src={JavascriptIcon} />,
+    <img style={{ height: 150 }} src={NodejsIcon} />,
+  ];
   const getRandomColor = () => {
     var letters = "0123456789ABCDEF";
     var color = "#";
@@ -95,17 +114,23 @@ const ResumeComponent = ({ data }) => {
         </div>
       </div>
       <div className="row skill">
-        <div className="three columns header-col">
-          <h1>
-            <span>Skills</span>
-          </h1>
+        <div className="header-col" style={{ marginBottom: 50 }}>
+          <h1>Skills and Tools</h1>
+          <span>{data.skillMessage}</span>
         </div>
-        <div className="nine columns main-col">
-          <p>{data.skillMessage}</p>
-          <div className="bars">
-            <ul className="skills">{skills(data.skills)}</ul>
-          </div>
-        </div>
+        <AliceCarousel
+          autoPlayInterval={5000}
+          mouseTracking
+          items={items}
+          autoPlay
+          infinite
+          disableDotsControls
+          responsive={{
+            0: { items: 1 },
+            568: { items: 3 },
+            1024: { items: 5 },
+          }}
+        />
       </div>
     </section>
   );

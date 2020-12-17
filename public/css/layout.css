@@ -500,6 +500,10 @@ body {
   line-height: 42px;
   border-radius: 0px;
 }
+
+.alice-carousel__stage-item {
+  text-align: center;
+}
 /*
 .git {
   	-moz-animation: git 2s ease;

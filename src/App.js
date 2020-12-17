@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./assets/css/App.css";
+// import "antd/dist/antd.css";
 import { main, portfolio, resume } from "./resumeData.json";
 import About from "./pages/about/about-section";
 import Contact from "./pages/contact/contact-section";
