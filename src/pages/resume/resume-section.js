@@ -7,18 +7,20 @@ import GitIcon from "../../assets/img/git-icon-2.png";
 import HtmlIcon from "../../assets/img/html-icon.png";
 import JavascriptIcon from "../../assets/img/javascript-icon.png";
 import NodejsIcon from "../../assets/img/nodejs-icon.png";
+import SqlIcon from "../../assets/img/sql-icon.png";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 
 const ResumeComponent = ({ data }) => {
   const items = [
     <img style={{ height: 150 }} src={ReactIcon} />,
-    <img style={{ height: 150 }} src={AndroidIcon} />,
+    <img style={{ height: 150 }} src={JavascriptIcon} />,
+    <img style={{ height: 150 }} src={HtmlIcon} />,
     <img style={{ height: 150 }} src={CssIcon} />,
     <img style={{ height: 150 }} src={GitIcon} />,
-    <img style={{ height: 150 }} src={HtmlIcon} />,
-    <img style={{ height: 150 }} src={JavascriptIcon} />,
     <img style={{ height: 150 }} src={NodejsIcon} />,
+    <img style={{ height: 150 }} src={SqlIcon} />,
+    <img style={{ height: 150 }} src={AndroidIcon} />,
   ];
   const getRandomColor = () => {
     var letters = "0123456789ABCDEF";
