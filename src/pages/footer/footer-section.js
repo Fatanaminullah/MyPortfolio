@@ -1,23 +1,20 @@
-import React, { Component } from "react";
+import React from "react";
 
-const FooterComponent = (props) => {
-  if (props.data) {
-    var networks = props.data.social.map(function (network) {
-      return (
-        <li key={network.name}>
-          <a href={network.url} target="_blank">
-            <i className={network.className}></i>
-          </a>
-        </li>
-      );
-    });
-  }
+const FooterComponent = ({ data }) => {
+  const networks = (data) => {
+    return data.map((item) => (
+      <li key={item.name}>
+        <a href={item.url} target="_blank">
+          <i className={item.className}></i>
+        </a>
+      </li>
+    ));
+  };
   return (
     <footer>
       <div className="row">
         <div className="twelve columns">
-          <ul className="social-links">{networks}</ul>
-
+          <ul className="social-links">{networks(data.social)}</ul>
           <ul className="copyright">
             <li>&copy; Copyright 2020 Fatan Aminullah</li>
           </ul>

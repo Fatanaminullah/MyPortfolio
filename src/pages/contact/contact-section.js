@@ -1,16 +1,8 @@
-import React, { Component } from "react";
+import React from "react";
 
-const ContactComponent = (props) => {
-  if (props.data) {
-    var name = props.data.name;
-    var street = props.data.address.street;
-    var city = props.data.address.city;
-    var state = props.data.address.state;
-    var zip = props.data.address.zip;
-    var phone = props.data.phone;
-    var email = props.data.email;
-    var message = props.data.contactmessage;
-  }
+const ContactComponent = ({ data }) => {
+  const { address, phone, email, contactMessage } = data;
+  const { city, state } = address;
   return (
     <section id="contact">
       <div className="row section-head">
@@ -20,7 +12,7 @@ const ContactComponent = (props) => {
           </h1>
         </div>
         <div className="ten columns">
-          <p className="lead">{message}</p>
+          <p className="lead">{contactMessage}</p>
         </div>
       </div>
       <div className="row">
@@ -83,6 +75,8 @@ const ContactComponent = (props) => {
             <h4>Address and Phone</h4>
             <p className="address">
               {city}, {state}
+              <br />
+              <span>{email}</span>
               <br />
               <span>{phone}</span>
             </p>

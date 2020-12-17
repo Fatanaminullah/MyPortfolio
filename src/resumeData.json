@@ -5,7 +5,7 @@
     "image": "profilepic.png",
     "darkBg": "testimonials-bg.jpg",
     "bio": "Hello my name is Fatan Aminullah. I'm a 20 years old Software Developer. Now i'm working at PT. Emporia Digital as a Frontend Developer. I'm using ReactJS to build a Web Application and React Native to build a Mobile Application. I started my journey as a Professional Programmer in 2019, but I've started introducing myself to programming since I was in junior high school ",
-    "contactmessage": "Want to discuss something? Feel free to contact me!",
+    "contactMessage": "Want to discuss something? Feel free to contact me!",
     "email": "fatan.aminullah.j@gmail.com",
     "phone": "082113705067",
     "address": {
@@ -33,6 +33,7 @@
     ]
   },
   "resume": {
+    "skillMessage": "Here are some of skill that i good at",
     "education": [
       {
         "school": "Mercu Buana University",
@@ -47,7 +48,7 @@
         ]
       },
       {
-        "school": "Purwadhika Startup and Coding School",
+        "school": "Purwadhika Digital Technology School",
         "degree": "Web and Mobile Development",
         "graduated": "January 2019 - June 2019",
         "description": [
@@ -138,6 +139,12 @@
         "category": "IKI Mitra mobile apps with react native",
         "image": "iki-mitra-collapsed.png",
         "type": "mobile"
+      },
+      {
+        "title": "Fatan Online Bookstore",
+        "category": "Final Project at Purwadhika Digital Technology School",
+        "image": "fatanbookstore.png",
+        "type": "web"
       }
     ]
   }
