@@ -76,9 +76,23 @@ const ContactComponent = ({ data }) => {
             <p className="address">
               {city}, {state}
               <br />
-              <span>{email}</span>
+              <a
+                href="mailto:fatan.aminullah.j@gmail.com"
+                target="_blank"
+                style={{ color: "#636363" }}
+              >
+                <i class="fa fa-envelope"></i>
+                <span style={{ marginLeft: "5px" }}>{email}</span>
+              </a>
               <br />
-              <span>{phone}</span>
+              <a
+                href="https://api.whatsapp.com/send?phone=6282113705067&text=Halo salam kenal fatan"
+                target="_blank"
+                style={{ color: "#636363" }}
+              >
+                <i className="fa fa-phone"></i>
+                <span style={{ marginLeft: "5px" }}>{phone}</span>
+              </a>
             </p>
           </div>
         </aside>
