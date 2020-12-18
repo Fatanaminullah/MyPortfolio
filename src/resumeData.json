@@ -67,6 +67,12 @@
           "OOP (Object Oriented Programming)",
           "Android Software Development"
         ]
+      },
+      {
+        "school": "SMAN 5 Bekasi",
+        "degree": "Sciences",
+        "graduated": "2015 - 2018",
+        "description": []
       }
     ],
     "work": [
