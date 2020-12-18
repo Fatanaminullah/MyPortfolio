@@ -15,7 +15,7 @@ const HeaderComponent = ({ data }) => {
   return (
     <header
       id="home"
-      style={{ background: `url(${darkBg}) no-repeat center center fixed` }}
+      style={{ background: `url(${darkBg}) no-repeat right center fixed` }}
     >
       <nav id="nav-wrap">
         <a className="mobile-btn" href="#nav-wrap" title="Show navigation">

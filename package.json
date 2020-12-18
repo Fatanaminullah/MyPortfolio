@@ -4,9 +4,7 @@
   "homepage": "./",
   "private": true,
   "dependencies": {
-    "@ant-design/icons": "^4.3.0",
     "anix": "^0.3.3",
-    "antd": "^4.9.4",
     "jquery": "^3.2.1",
     "particles-bg": "^2.3.12",
     "react": "^16.2.0",
