@@ -5,16 +5,18 @@
   "private": true,
   "dependencies": {
     "anix": "^0.3.3",
+    "emailjs-com": "^2.6.4",
     "jquery": "^3.2.1",
     "particles-bg": "^2.3.12",
     "react": "^16.2.0",
     "react-alice-carousel": "^2.1.0",
     "react-dom": "^16.2.0",
     "react-ga": "^2.3.5",
-    "react-scripts": "1.0.17"
+    "react-scripts": "1.0.17",
+    "sweetalert2": "^10.12.5"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "set PORT=8080 && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"

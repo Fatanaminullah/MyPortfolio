@@ -1100,7 +1100,7 @@ call-to-action .button {
 #contact textarea:focus,
 #contact select:focus {
   color: #fff;
-  background-color: #0762f9;
+  background-color: #525252;
 }
 #contact button.submit {
   text-transform: uppercase;
@@ -1119,12 +1119,11 @@ call-to-action .button {
   background: #fff;
 }
 #contact span.required {
-  color: #0762f9;
+  color: #d9534f;
   font-size: 13px;
 }
 #message-warning,
 #message-success {
-  display: none;
   background: #0f0f0f;
   padding: 24px 24px;
   margin-bottom: 36px;
@@ -1132,10 +1131,10 @@ call-to-action .button {
   margin-left: 26%;
 }
 #message-warning {
-  color: #d72828;
+  color: #d9534f;
 }
 #message-success {
-  color: #0762f9;
+  color: #5cb85c;
 }
 
 #message-warning i,
@@ -1143,7 +1142,6 @@ call-to-action .button {
   margin-right: 10px;
 }
 #image-loader {
-  display: none;
   position: relative;
   left: 18px;
   top: 17px;

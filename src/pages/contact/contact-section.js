@@ -1,8 +1,48 @@
-import React from "react";
+import React, { useState } from "react";
+import Swal from "sweetalert2";
+import emailjs from "emailjs-com";
 
 const ContactComponent = ({ data }) => {
+  const [formValue, setFormValue] = useState({ to_name: "Fatan" });
+  const [loading, setLoading] = useState(false);
   const { address, phone, email, contactMessage } = data;
   const { city, state } = address;
+  const onSubmit = (e) => {
+    setLoading(true);
+    e.preventDefault();
+    const { from_name, subject, reply_to, message } = formValue;
+    if (from_name && subject && reply_to && message) {
+      console.log("submit", formValue);
+      emailjs
+        .send("service_gmail", "template_default", formValue)
+        .then((res) => {
+          document.getElementById("contactForm").reset();
+          Swal.fire({
+            icon: "success",
+            title: "Your message was sent, thank you!",
+          });
+        })
+        .catch(() => {
+          Swal.fire({
+            icon: "error",
+            title: "Sorry.. Something went wrong, please try again later",
+          });
+        })
+        .finally(() => {
+          setLoading(false);
+        });
+    } else {
+      setLoading(false);
+      Swal.fire({
+        icon: "error",
+        title: "Please fill all required field",
+      });
+    }
+  };
+  const onChange = (e) => {
+    const { name, value } = e.target;
+    setFormValue({ ...formValue, [name]: value });
+  };
   return (
     <section id="contact">
       <div className="row section-head">
@@ -17,58 +57,71 @@ const ContactComponent = ({ data }) => {
       </div>
       <div className="row">
         <div className="eight columns">
-          <form action="" method="post" id="contactForm" name="contactForm">
+          <form onSubmit={onSubmit} id="contactForm" name="contactForm">
             <fieldset>
               <div>
-                <label htmlFor="contactName">
+                <label htmlFor="from_name">
                   Name <span className="required">*</span>
                 </label>
                 <input
                   type="text"
                   defaultValue=""
                   size="35"
-                  id="contactName"
-                  name="contactName"
-                  onChange={this.handleChange}
+                  id="from_name"
+                  name="from_name"
+                  onChange={onChange}
                 />
               </div>
               <div>
-                <label htmlFor="contactEmail">
+                <label htmlFor="subject">
+                  Subject <span className="required">*</span>
+                </label>
+                <input
+                  type="text"
+                  defaultValue=""
+                  size="35"
+                  id="subject"
+                  name="subject"
+                  onChange={onChange}
+                />
+              </div>
+              <div>
+                <label htmlFor="reply_to">
                   Email <span className="required">*</span>
                 </label>
                 <input
                   type="text"
                   defaultValue=""
                   size="35"
-                  id="contactEmail"
-                  name="contactEmail"
-                  onChange={this.handleChange}
+                  id="reply_to"
+                  name="reply_to"
+                  onChange={onChange}
                 />
               </div>
               <div>
-                <label htmlFor="contactMessage">
+                <label htmlFor="message">
                   Message <span className="required">*</span>
                 </label>
                 <textarea
                   cols="50"
                   rows="5"
-                  id="contactMessage"
-                  name="contactMessage"
+                  id="message"
+                  name="message"
+                  onChange={onChange}
                 ></textarea>
               </div>
               <div>
-                <button className="submit">Submit</button>
-                <span id="image-loader">
-                  <img alt="" src="images/loader.gif" />
-                </span>
+                <button className="submit" onClick={(e) => onSubmit(e)}>
+                  Submit
+                </button>
+                {loading && (
+                  <span id="image-loader">
+                    <img alt="" src="images/loader.gif" />
+                  </span>
+                )}
               </div>
             </fieldset>
           </form>
-          <div id="message-warning"> Error boy</div>
-          <div id="message-success">
-            <i className="fa fa-check"></i>Your message was sent, thank you!
-            <br />
-          </div>
         </div>
         <aside className="four columns footer-widgets">
           <div className="widget widget_contact">
@@ -82,7 +135,11 @@ const ContactComponent = ({ data }) => {
                 style={{ color: "#636363" }}
               >
                 <i class="fa fa-envelope"></i>
-                <span style={{ marginLeft: "5px" }}>{email}</span>
+                <span
+                  style={{ marginLeft: "5px", textDecoration: "underline" }}
+                >
+                  {email}
+                </span>
               </a>
               <br />
               <a
@@ -91,7 +148,11 @@ const ContactComponent = ({ data }) => {
                 style={{ color: "#636363" }}
               >
                 <i className="fa fa-phone"></i>
-                <span style={{ marginLeft: "5px" }}>{phone}</span>
+                <span
+                  style={{ marginLeft: "5px", textDecoration: "underline" }}
+                >
+                  {phone}(WhatsApp)
+                </span>
               </a>
             </p>
           </div>
