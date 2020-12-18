@@ -1,16 +1,14 @@
-import { Carousel } from "antd";
 import React from "react";
-import ReactIcon from "../../assets/img/react-icon.png";
+import AliceCarousel from "react-alice-carousel";
+import "react-alice-carousel/lib/alice-carousel.css";
 import AndroidIcon from "../../assets/img/android-icon.png";
 import CssIcon from "../../assets/img/css-icon.png";
 import GitIcon from "../../assets/img/git-icon-2.png";
 import HtmlIcon from "../../assets/img/html-icon.png";
 import JavascriptIcon from "../../assets/img/javascript-icon.png";
 import NodejsIcon from "../../assets/img/nodejs-icon.png";
+import ReactIcon from "../../assets/img/react-icon.png";
 import SqlIcon from "../../assets/img/sql-icon.png";
-import AliceCarousel from "react-alice-carousel";
-import "react-alice-carousel/lib/alice-carousel.css";
-
 const ResumeComponent = ({ data }) => {
   const items = [
     <img style={{ height: 150 }} src={ReactIcon} />,
