@@ -1,5 +1,5 @@
 import React from "react";
-import darkBg from "../../assets/img/bg-header.png";
+import darkBg from "../../assets/img/bg-header-2.png";
 
 const HeaderComponent = ({ data }) => {
   const { project, github, name, description, city, social } = data;
