@@ -14,7 +14,11 @@ const ContactComponent = ({ data }) => {
     if (from_name && subject && reply_to && message) {
       console.log("submit", formValue);
       emailjs
-        .send("service_gmail", "template_default", formValue)
+        .send(
+          process.env.REACT_APP_SERVICE_ID_EMAILJS,
+          process.env.REACT_APP_TEMPLATE_ID_EMAILJS,
+          formValue
+        )
         .then((res) => {
           document.getElementById("contactForm").reset();
           Swal.fire({
