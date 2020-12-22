@@ -123,10 +123,16 @@
   "portfolio": {
     "projects": [
       {
-        "title": "Pocket Web Admin",
+        "title": "Pocketbank Portal Web Admin",
         "category": "Website for Pocket Web Admin",
         "image": "pocket-web.png",
         "type": "web"
+      },
+      {
+        "title": "Pocketbank Mobile Customer",
+        "category": "Mobile application for customer (m - banking) with pocketbank",
+        "image": "pocket-customer-collapsed.png",
+        "type": "mobile"
       },
       {
         "title": "IKI Bills Dashboard",

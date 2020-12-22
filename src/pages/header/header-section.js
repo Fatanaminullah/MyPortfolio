@@ -2,11 +2,11 @@ import React from "react";
 import darkBg from "../../assets/img/bg-header-2.png";
 
 const HeaderComponent = ({ data }) => {
-  const { project, github, name, description, city, social } = data;
+  const { name, description, social } = data;
   const networks = () => {
     return social.map((item) => (
       <li key={item.name}>
-        <a href={item.url}>
+        <a href={item.url} target="_blank">
           <i className={item.className}></i>
         </a>
       </li>
