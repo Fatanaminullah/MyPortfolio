@@ -159,6 +159,28 @@ jQuery(document).ready(function ($) {
   window.addEventListener("scroll", callbackFunc);
 
   /*----------------------------------------------------*/
+  /*	about animation
+------------------------------------------------------*/
+  var section = document.querySelectorAll(".about-section");
+
+  function isShowSection(el) {
+    var rect = el.getBoundingClientRect();
+    console.log("scroll", rect.bottom, rect.top, window.pageYOffset);
+    return rect.top - 300 <= window.pageYOffset && rect.bottom > 50;
+  }
+
+  window.addEventListener("scroll", () => {
+    for (var i = 0; i < section.length; i++) {
+      if (isShowSection(section[i])) {
+        opacity = 1;
+      } else {
+        opacity = 0;
+      }
+      section[i].style.opacity = opacity;
+    }
+  });
+
+  /*----------------------------------------------------*/
   /*	type writing header
 ------------------------------------------------------*/
 
