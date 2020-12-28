@@ -1,12 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import Modal from "react-modal";
 import "react-tabs/style/react-tabs.css";
 
+const customStyles = {
+  content: {
+    top: "50%",
+    left: "50%",
+    right: "auto",
+    bottom: "auto",
+    marginRight: "-50%",
+    transform: "translate(-50%, -50%)",
+  },
+};
+
+Modal.setAppElement("#root");
+
 const ProjectsComponent = ({ data }) => {
+  const [visibleModal, setVisibleModal] = useState(false);
   const projects = (data, type) => {
     return data.map((item, index) => {
       const projectImage = "images/portfolio/" + item.image;
-      // if (item.type === type || type === "all") {
       return (
         <div
           key={item.title}
@@ -28,11 +42,20 @@ const ProjectsComponent = ({ data }) => {
           </div>
         </div>
       );
-      // }
     });
   };
   return (
     <section id="portfolio">
+      <Modal
+        closeTimeoutMS={500}
+        isOpen={visibleModal}
+        // onAfterOpen={afterOpenModal}
+        onRequestClose={() => setVisibleModal(false)}
+        style={customStyles}
+        contentLabel="Example Modal"
+      >
+        <h1>Check Out Some of My Works.</h1>
+      </Modal>
       <div className="row">
         <div className="twelve columns collapsed">
           <h1>Check Out Some of My Works.</h1>

@@ -1,7 +1,12 @@
 {
   "main": {
     "name": "Hello, I'm Fatan Aminullah",
-    "description": ["Software Developer", "Frontend Developer", "React Developer", "React Native Developer"],
+    "description": [
+      "Software Developer",
+      "Frontend Developer",
+      "React Developer",
+      "React Native Developer"
+    ],
     "image": "profilepic.png",
     "darkBg": "testimonials-bg.jpg",
     "bio": "My name is Fatan Aminullah, i'm a 20 years old Software Developer. Now i'm working at PT. Emporia Digital as a Frontend Developer. I'm using ReactJS to build a Web Application and React Native to build a Mobile Application. I started my journey as a Professional Programmer in 2019, but I've started introducing myself to programming since I was in junior high school ",
@@ -39,34 +44,19 @@
         "school": "Mercu Buana University",
         "degree": "Information System",
         "graduated": "February 2020 - Present",
-        "description": [
-          "Database System",
-          "Programming",
-          "Mathematic Logic",
-          "Bussiness and Management",
-          "Management of Information System"
-        ]
+        "description": "Learning about Database System, Programming, Mathematic Logic, Bussiness and Management, and Management of Information System"
       },
       {
         "school": "Purwadhika Digital Technology School",
         "degree": "Web and Mobile Development",
         "graduated": "January 2019 - June 2019",
-        "description": [
-          "Javascript Programming Fundamental",
-          "Frontend Development with React JS",
-          "Backend Development with NodeJS and ExpressJS",
-          "Mobile Development with React Native"
-        ]
+        "description": "Learning about Javascript Programming Fundamental, Frontend Development with React JS, Backend Development with NodeJS and ExpressJS, and Mobile Development with React Native"
       },
       {
         "school": "Nordic School of Technologies",
         "degree": "Java Android Fundamental",
         "graduated": "August 2018 - December 2018",
-        "description": [
-          "Programming Fundamental with Java Programming Language",
-          "OOP (Object Oriented Programming)",
-          "Android Software Development"
-        ]
+        "description": "Learning about Programming Fundamental with Java Programming Language, OOP (Object Oriented Programming) and Android Software Development"
       },
       {
         "school": "SMAN 5 Bekasi",
