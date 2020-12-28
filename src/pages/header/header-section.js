@@ -60,7 +60,14 @@ const HeaderComponent = ({ data }) => {
           >
             {name}
           </h1>
-          <h3>{description}</h3>
+          <h3>
+            I'm a {' '}
+            <span
+              class="txt-rotate"
+              data-period="2000"
+              data-rotate={JSON.stringify(description)}
+            ></span>
+          </h3>
           <hr />
         </div>
         <ul className="social">{networks()}</ul>

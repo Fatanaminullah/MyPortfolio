@@ -128,51 +128,65 @@ jQuery(document).ready(function ($) {
   });
 
   /*----------------------------------------------------*/
-  /*	contact form
+  /*	type writing header
 ------------------------------------------------------*/
 
-  // $("form#contactForm button.submit").click(function () {
-  //   $("#image-loader").fadeIn();
+  var TxtRotate = function (el, toRotate, period) {
+    this.toRotate = toRotate;
+    this.el = el;
+    this.loopNum = 0;
+    this.period = parseInt(period, 10) || 2000;
+    this.txt = "";
+    this.tick();
+    this.isDeleting = false;
+  };
 
-  //   var from_name = $("#contactForm #from_name").val();
-  //   var message = $("#contactForm #message").val();
-  //   var reply_to = $("#contactForm #reply_to").val();
-  //   var subject = $("#contactForm #subject").val();
-  //   console.log("valaue", !from_name || !message || !reply_to || !subject);
-  //   if (!from_name || !message || !reply_to || !subject) {
-  //     $("#image-loader").fadeOut();
-  //     // $("#message-warning").html(msg);
-  //     $("#message-warning").fadeIn();
-  //   } else {
-  //     var data = {
-  //       service_id: "service_gmail",
-  //       template_id: "template_default",
-  //       user_id: "user_eFaRvhEZUjHIcx9rr2OIJ",
-  //       template_params: {
-  //         from_name,
-  //         message,
-  //         reply_to,
-  //         subject,
-  //         to_name: "Fatan Aminullah",
-  //       },
-  //     };
-  //     $.ajax("https://api.emailjs.com/api/v1.0/email/send", {
-  //       type: "POST",
-  //       data: JSON.stringify(data),
-  //       contentType: "application/json",
-  //     })
-  //       .done(function () {
-  //         $("#image-loader").fadeOut();
-  //         $("#message-warning").hide();
-  //         $("#contactForm").fadeOut();
-  //         $("#message-success").fadeIn();
-  //       })
-  //       .fail(function (error) {
-  //         $("#image-loader").fadeOut();
-  //         $("#message-warning").html(msg);
-  //         $("#message-warning").fadeIn();
-  //       });
-  //     return false;
-  //   }
-  // });
+  TxtRotate.prototype.tick = function () {
+    var i = this.loopNum % this.toRotate.length;
+    var fullTxt = this.toRotate[i];
+
+    if (this.isDeleting) {
+      this.txt = fullTxt.substring(0, this.txt.length - 1);
+    } else {
+      this.txt = fullTxt.substring(0, this.txt.length + 1);
+    }
+
+    this.el.innerHTML = '<span class="wrap">' + this.txt + "</span>";
+
+    var that = this;
+    var delta = 300 - Math.random() * 100;
+
+    if (this.isDeleting) {
+      delta /= 2;
+    }
+
+    if (!this.isDeleting && this.txt === fullTxt) {
+      delta = this.period;
+      this.isDeleting = true;
+    } else if (this.isDeleting && this.txt === "") {
+      this.isDeleting = false;
+      this.loopNum++;
+      delta = 500;
+    }
+
+    setTimeout(function () {
+      that.tick();
+    }, delta);
+  };
+
+  window.onload = function () {
+    var elements = document.getElementsByClassName("txt-rotate");
+    for (var i = 0; i < elements.length; i++) {
+      var toRotate = elements[i].getAttribute("data-rotate");
+      var period = elements[i].getAttribute("data-period");
+      if (toRotate) {
+        new TxtRotate(elements[i], JSON.parse(toRotate), period);
+      }
+    }
+    // INJECT CSS
+    var css = document.createElement("style");
+    css.type = "text/css";
+    css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+    document.body.appendChild(css);
+  };
 });
