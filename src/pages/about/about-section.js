@@ -1,29 +1,34 @@
 import React, { Component } from "react";
 
-const AboutComponent = (props) => {
-  if (props.data) {
-    var name = props.data.name;
-    var profilepic = "images/" + props.data.image;
-    var bio = props.data.bio;
-    var street = props.data.address.street;
-    var city = props.data.address.city;
-    var state = props.data.address.state;
-    var zip = props.data.address.zip;
-    var phone = props.data.phone;
-    var email = props.data.email;
-    var resumeDownload = props.data.resumedownload;
-  }
+const AboutComponent = ({ data }) => {
+  const [isVisible, setVisible] = React.useState(false);
+  const domRef = React.useRef();
+  React.useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => setVisible(entry.isIntersecting));
+    });
+    observer.observe(domRef.current);
+  }, []);
+  const { profilePicture, bio, resumeDownload } = data;
   return (
     <section id="about">
       <div className="row">
         <div className="three columns">
           <img
-            className="profile-pic about-section"
-            src={profilepic}
+            className={`profile-pic about-section ${
+              isVisible ? "is-visible" : ""
+            }`}
+            ref={domRef}
+            src={`images/${profilePicture}`}
             alt="Nordic Giant Profile Pic"
           />
         </div>
-        <div className="nine columns main-col about-section">
+        <div
+          className={`nine columns main-col about-section ${
+            isVisible ? "is-visible" : ""
+          }`}
+          ref={domRef}
+        >
           <h2 className="text-header">About Me</h2>
           <p>{bio}</p>
           <div className="row">

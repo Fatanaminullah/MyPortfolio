@@ -7,7 +7,7 @@
       "React Developer",
       "React Native Developer"
     ],
-    "image": "profilepic.png",
+    "profilePicture": "profilepic.png",
     "darkBg": "testimonials-bg.jpg",
     "bio": "My name is Fatan Aminullah, i'm a 20 years old Software Developer. Now i'm working at PT. Emporia Digital as a Frontend Developer. I'm using ReactJS to build a Web Application and React Native to build a Mobile Application. I started my journey as a Professional Programmer in 2019, but I've started introducing myself to programming since I was in junior high school ",
     "contactMessage": "Want to discuss something? Feel free to contact me!",
@@ -18,7 +18,7 @@
       "state": "Indonesia"
     },
     "website": "https://www.fatanaminullah.com",
-    "resumedownload": "/files/CV_FATAN_AMINULLAH.pdf",
+    "resumeDownload": "/files/CV_FATAN_AMINULLAH.pdf",
     "social": [
       {
         "name": "linkedin",
