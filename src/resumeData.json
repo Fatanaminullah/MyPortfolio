@@ -78,75 +78,75 @@
         "years": "July 2019 - July 2020",
         "description": "Working in a team to build Web and Mobile Application using ReactJS and React Native Framework. Implement a Responsive Web and Mobile Application for modern banking application based on latest market best practices"
       }
-    ],
-    "skills": [
-      {
-        "name": "ReactJs",
-        "level": "90%"
-      },
-      {
-        "name": "React Native",
-        "level": "90%"
-      },
-      {
-        "name": "HTML",
-        "level": "100%"
-      },
-      {
-        "name": "CSS",
-        "level": "100%"
-      },
-      {
-        "name": "MySQL",
-        "level": "70%"
-      },
-      {
-        "name": "MongoDB",
-        "level": "60%"
-      },
-      {
-        "name": "Java (Android)",
-        "level": "55%"
-      }
     ]
   },
   "portfolio": {
     "projects": [
       {
         "title": "Pocketbank Portal Web Admin",
-        "category": "Website for Pocket Web Admin",
+        "description": "Website for Pocket Web Admin",
         "image": "pocket-web.png",
-        "type": "web"
+        "type": "web",
+        "tags": ["ReactJS", "HTML", "CSS"],
+        "imageDetails": [
+          "pocket-web.png",
+          "pocket-web-2.png",
+          "pocket-web-3.png"
+        ]
       },
       {
         "title": "Pocketbank Mobile Customer",
-        "category": "Mobile application for customer (m - banking) with pocketbank",
+        "description": "Mobile application for customer (m - banking) with pocketbank",
         "image": "pocket-customer-collapsed.png",
-        "type": "mobile"
+        "type": "mobile",
+        "tags": ["React Native", "Android", "IOS"],
+        "imageDetails": ["pocket-customer-collapsed.png"]
       },
       {
         "title": "IKI Bills Dashboard",
-        "category": "Website for IKI Bills Dashboard",
+        "description": "Website for IKI Bills Dashboard",
         "image": "ikibill-dashboard.png",
-        "type": "web"
+        "type": "web",
+        "tags": ["ReactJS", "HTML", "CSS"],
+        "imageDetails": [
+          "ikibill-dashboard.png",
+          "ikibill-dashboard-2.png",
+          "ikibill-dashboard-3.png"
+        ]
       },
       {
         "title": "IKI Aku",
-        "category": "IKI Aku mobile apps with react native",
+        "description": "IKI Aku mobile apps with react native",
         "image": "iki-aku-collapsed.png",
-        "type": "mobile"
+        "type": "mobile",
+        "tags": ["React Native", "Android", "IOS"],
+        "imageDetails": [
+          "iki-aku.png",
+          "iki-aku-2.png",
+          "iki-aku-3.png",
+          "iki-aku-4.png"
+        ]
       },
       {
         "title": "IKI Mitra",
-        "category": "IKI Mitra mobile apps with react native",
+        "description": "IKI Mitra mobile apps with react native",
         "image": "iki-mitra-collapsed.png",
-        "type": "mobile"
+        "type": "mobile",
+        "tags": ["React Native", "Android", "IOS"],
+        "imageDetails": [
+          "iki-mitra-1.jpeg",
+          "iki-mitra-2.jpeg",
+          "iki-mitra-3.jpeg",
+          "iki-mitra-4.jpeg"
+        ]
       },
       {
         "title": "Fatan Online Bookstore",
-        "category": "Final Project at Purwadhika Digital Technology School",
+        "description": "Final Project at Purwadhika Digital Technology School",
         "image": "fatanbookstore.png",
-        "type": "web"
+        "type": "web",
+        "tags": ["ReactJS", "HTML", "CSS"],
+        "imageDetails": ["fatanbookstore.png"]
       }
     ]
   }

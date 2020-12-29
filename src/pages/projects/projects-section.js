@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import Modal from "react-modal";
 import "react-tabs/style/react-tabs.css";
-// import "./project.css";
+import AliceCarousel from "react-alice-carousel";
+import "react-alice-carousel/lib/alice-carousel.css";
 
 const customStyles = {
   content: {
@@ -19,10 +20,14 @@ Modal.setAppElement("#root");
 
 const ProjectsComponent = ({ data }) => {
   const [selectedTab, setSelectedTab] = useState("all");
+  const [selectedProject, setSelectedProject] = useState("");
   const [visibleModal, setVisibleModal] = useState(false);
+  const items = data.projects.map((item) => (
+    <img src={`images/portfolio/${item.image}`} />
+  ));
   const projects = (data, type) => {
     return data.map((item, index) => {
-      const projectImage = "images/portfolio/" + item.image;
+      const projectImage = `images/portfolio/${item.image}`;
       return (
         <div
           id="portfolio-item"
@@ -34,10 +39,15 @@ const ProjectsComponent = ({ data }) => {
             <div>
               <div className="portfolio-item-meta">
                 <h5>{item.title}</h5>
-                <p>{item.category}</p>
               </div>
             </div>
-            <div className="overlay">
+            <div
+              className="overlay"
+              onClick={() => {
+                setVisibleModal(true);
+                setSelectedProject(item);
+              }}
+            >
               <p className="overlay-details">Click for details</p>
             </div>
           </div>
@@ -64,12 +74,55 @@ const ProjectsComponent = ({ data }) => {
       <Modal
         closeTimeoutMS={500}
         isOpen={visibleModal}
-        // onAfterOpen={afterOpenModal}
         onRequestClose={() => setVisibleModal(false)}
         style={customStyles}
-        contentLabel="Example Modal"
       >
-        <h1>Check Out Some of My Works.</h1>
+        <div className="row popup-modal">
+          <div className="six columns">
+            {selectedProject.type === "web" ? (
+              <AliceCarousel
+                autoPlayInterval={2000}
+                mouseTracking
+                items={
+                  selectedProject &&
+                  selectedProject.imageDetails.map((item) => (
+                    <img
+                      style={{ width: 400 }}
+                      src={`images/portfolio/${item}`}
+                      alt={item}
+                    />
+                  ))
+                }
+                paddingLeft={0}
+                paddingRight={0}
+                autoPlay
+                infinite
+                disableButtonsControls
+                responsive={{
+                  0: { items: 1 },
+                  568: { items: 1 },
+                  1026: { items: 1 },
+                }}
+              />
+            ) : (
+              <img src={`images/portfolio/${selectedProject.image}`} />
+            )}
+          </div>
+          <div className="six columns">
+            <div className="description-box">
+              <div>
+                <h4>{selectedProject.title}</h4>
+                <p>{selectedProject.description}</p>
+              </div>
+              <div>
+                <ul className="tags">
+                  {selectedProject &&
+                    selectedProject.tags.map((item) => <li>{item}</li>)}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </Modal>
       <div className="row">
         <div className="twelve columns collapsed">

@@ -573,6 +573,7 @@ body {
 
 .ReactModal__Overlay--after-open {
   opacity: 1;
+  z-index: 3;
 }
 
 .ReactModal__Overlay--before-close {
@@ -587,23 +588,17 @@ body {
 .ReactModal__Content--after-open {
   transform: scale(1);
   z-index: 3;
+  width: 85%;
+  min-height: 330px;
+  max-height: 90%;
 }
 
 .ReactModal__Content--before-close {
   transform: scale(0);
 }
 
-.popup-modal {
-  max-width: 550px;
-  background: #fff;
-  position: relative;
-  margin: 0 auto;
-}
-.popup-modal .description-box {
-  padding: 12px 36px 18px 36px;
-}
 .popup-modal .description-box h4 {
-  font: 15px/24px "opensans-bold", sans-serif;
+  font: 17px/26px "opensans-bold", sans-serif;
   margin-bottom: 12px;
   color: #111;
 }
@@ -612,57 +607,23 @@ body {
   color: #a1a1a1;
   margin-bottom: 12px;
 }
-.popup-modal .description-box .categories {
-  font: 11px/21px "opensans-light", sans-serif;
-  color: #a1a1a1;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  display: block;
-  text-align: left;
-}
-.popup-modal .description-box .categories i {
-  margin-right: 8px;
-}
-.popup-modal .link-box {
-  padding: 18px 36px;
-  background: #111;
-  text-align: left;
-}
-.popup-modal .link-box a {
-  color: #fff;
-  font: 11px/21px "opensans-bold", sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  cursor: pointer;
-}
-.popup-modal a:hover {
-  color: #00cccc;
-}
-.popup-modal a.popup-modal-dismiss {
-  margin-left: 24px;
-}
 
-/* fadein/fadeout effect for modal popup
-/* ------------------------------------------------------------------ */
-
-/* content at start */
-.mfp-fade.mfp-wrap .mfp-content .popup-modal {
-  opacity: 0;
-  -webkit-transition: all 200ms ease-in-out;
-  -moz-transition: all 200ms ease-in-out;
-  -o-transition: all 200ms ease-in-out;
-  -ms-transition: all 200ms ease-in-out;
-  transition: all 200ms ease-in-out;
+.popup-modal .description-box ul.tags {
+  list-style: none;
+  margin-top: 50px;
+  margin-bottom: 0;
 }
-/* content fadein */
-.mfp-fade.mfp-wrap.mfp-ready .mfp-content .popup-modal {
-  opacity: 1;
+.popup-modal .description-box .tags li{
+  font: 12px/22px "opensans-regular", sans-serif;
+  color: #000;
+  display: inline-block;
+  line-height: 20px;
+  background-color: #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.14);
+  padding: 5px 10px;
+  margin-right: 10px;
+  border-radius: 3px;
 }
-/* content fadeout */
-.mfp-fade.mfp-wrap.mfp-removing .mfp-content .popup-modal {
-  opacity: 0;
-}
-
 /* ------------------------------------------------------------------ */
 /* f. Call To Action Section
 /* ------------------------------------------------------------------ */
@@ -720,81 +681,6 @@ call-to-action .button {
 #call-to-action p span {
   font-family: "opensans-semibold", sans-serif;
   color: #d8d8d8;
-}
-
-/* ------------------------------------------------------------------
-/* g. Testimonials
-/* ------------------------------------------------------------------ */
-
-#testimonials {
-  background: #1f1f1f url(../images/testimonials-bg.jpg) no-repeat center center;
-  background-size: cover !important;
-  -webkit-background-size: cover !important;
-  background-attachment: fixed;
-
-  position: relative;
-  min-height: 200px;
-  width: 100%;
-  overflow: hidden;
-}
-#testimonials .text-container {
-  padding-top: 96px;
-  padding-bottom: 66px;
-}
-#testimonials h1 {
-  font: 18px/24px "opensans-bold", sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  color: #fff;
-}
-#testimonials h1 span {
-  display: none;
-}
-#testimonials .header-col {
-  padding-top: 9px;
-}
-#testimonials .header-col h1:before {
-  font-family: "FontAwesome";
-  content: "\f10d";
-  padding-right: 10px;
-  font-size: 72px;
-  line-height: 72px;
-  text-align: left;
-  float: left;
-  color: #fff;
-}
-
-/*	Blockquotes */
-#testimonials blockquote {
-  margin: 0 0px 30px 0px;
-  padding-left: 0;
-  position: relative;
-  text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
-}
-#testimonials blockquote:before {
-  content: none;
-}
-#testimonials blockquote p {
-  font-family: "librebaskerville-italic", serif;
-  padding: 0;
-  font-size: 24px;
-  line-height: 48px;
-  color: #fff;
-}
-#testimonials blockquote cite {
-  display: block;
-  font-size: 12px;
-  font-style: normal;
-  line-height: 18px;
-  color: #fff;
-}
-#testimonials blockquote cite:before {
-  content: "\2014 \0020";
-}
-#testimonials blockquote cite a,
-#testimonials blockquote cite a:visited {
-  color: #8b9798;
-  border: none;
 }
 
 /* Flex Slider
