@@ -349,15 +349,16 @@ body {
   background: #e0e0e0;
 }
 .timeline ul li::after {
-  content: '';
+  content: "";
   position: absolute;
-  left: 50%;
-  bottom: 0;
-  transform: translateX(-50%) rotate(45deg);
-  width: 20px;
-  height: 20px;
-  z-index: 2;
-  background: #eee;
+  width: 25px;
+  height: 25px;
+  right: -10px;
+  background-color: white;
+  border: 4px solid #0762f9;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
 }
 .timeline ul li div {
   position: relative;
@@ -399,25 +400,25 @@ body {
   .timeline ul li div {
     width: 250px;
     flex-direction: column;
- }
+  }
   .timeline ul li div div {
     width: 80%;
     margin: 10px;
- }
+  }
   .timeline ul li:nth-of-type(even) > div {
     left: -289px;
- }
+  }
 }
 @media screen and (max-width: 600px) {
   .timeline ul li {
     margin-left: 20px;
- }
+  }
   .timeline ul li div {
     width: calc(100vw - 91px);
- }
+  }
   .timeline ul li:nth-of-type(even) > div {
     left: 45px;
- }
+  }
 }
 
 /*----------------------------------------------*/
@@ -472,55 +473,27 @@ body {
   }
 }
 
-.react-tabs__tab-list {
-  border: none !important;
-}
-
-.react-tabs__tab--selected {
+.tab-button.selected {
   color: #444444 !important;
   border: none !important;
   background-color: transparent !important;
   font: 14px/21px "opensans-bold", sans-serif;
 }
-.react-tabs__tab {
+.tab-button {
+  cursor: pointer;
+  margin-right: 20px;
   font: 14px/21px "opensans-bold", sans-serif;
 }
 
-.columns.portfolio-item.show {
-  animation-name: fadeIn;
-  animation-duration: 0.5s;
-  animation-timing-function: linear;
-  animation-fill-mode: forwards;
-}
-.columns.portfolio-item.hide {
-  animation-name: fadeOut;
-  animation-duration: 0.5s;
-  animation-timing-function: linear;
-  animation-fill-mode: forwards;
-  display: none;
+.portfolio-item {
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: scale(0);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-@keyframes fadeOut {
-  from {
-    opacity: 1;
-    transform: scale(1);
-  }
-  to {
-    opacity: 0;
-    transform: scale(0);
-    display: none;
-    position: absolute;
-  }
+.show {
+  transform: scale(1);
 }
 
 #portfolio-wrapper .columns {
@@ -530,12 +503,6 @@ body {
   overflow: hidden;
   position: relative;
   height: 176px;
-
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
 }
 
 .portfolio-item .item-wrap img {
@@ -619,7 +586,7 @@ body {
 
 .ReactModal__Content--after-open {
   transform: scale(1);
-  z-index: 2;
+  z-index: 3;
 }
 
 .ReactModal__Content--before-close {

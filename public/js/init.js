@@ -157,7 +157,7 @@ jQuery(document).ready(function ($) {
 
   window.addEventListener("load", callbackFunc);
   window.addEventListener("scroll", callbackFunc);
-  
+
   /*----------------------------------------------------*/
   /*	type writing header
 ------------------------------------------------------*/
@@ -220,4 +220,26 @@ jQuery(document).ready(function ($) {
     css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
     document.body.appendChild(css);
   };
+});
+
+/*----------------------------------------------------*/
+/*	project animation
+------------------------------------------------------*/
+
+$(function () {
+  var selectedClass = "";
+  $(".fil-cat").click(function () {
+    selectedClass = $(this).attr("data-rel");
+    $(".portfolio-item").fadeTo(300, 0.1);
+    $(".portfolio-item")
+      .not("." + selectedClass)
+      .fadeOut()
+      .removeClass("show");
+    setTimeout(function () {
+      $("." + selectedClass)
+        .fadeIn()
+        .addClass("show");
+      $(".portfolio-item").fadeTo(500, 1);
+    }, 300);
+  });
 });
