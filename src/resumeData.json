@@ -84,30 +84,26 @@
     "projects": [
       {
         "title": "Pocketbank Portal Web Admin",
-        "description": "Website for Pocket Web Admin",
+        "description": "Pocketbank Portal Web Admin is a Dashboard page for pocketbank administrator",
         "image": "pocket-web.png",
         "type": "web",
-        "tags": ["ReactJS", "HTML", "CSS"],
-        "imageDetails": [
-          "pocket-web.png",
-          "pocket-web-2.png",
-          "pocket-web-3.png"
-        ]
+        "tags": ["ReactJS", "HTML", "CSS", "Javascript"],
+        "imageDetails": ["pocket-web.png"]
       },
       {
         "title": "Pocketbank Mobile Customer",
-        "description": "Mobile application for customer (m - banking) with pocketbank",
+        "description": "Pocketbank Mobile Customer is a Mobile application for customer or mobile banking application built with pocketbank system by anabatic",
         "image": "pocket-customer-collapsed.png",
         "type": "mobile",
-        "tags": ["React Native", "Android", "IOS"],
+        "tags": ["React Native", "Android", "Javascript"],
         "imageDetails": ["pocket-customer-collapsed.png"]
       },
       {
         "title": "IKI Bills Dashboard",
-        "description": "Website for IKI Bills Dashboard",
+        "description": "IKI Bills Dashboard is a Dashboard page for iki bill administrator. Iki Bills is a system to pay your estate management bills.",
         "image": "ikibill-dashboard.png",
         "type": "web",
-        "tags": ["ReactJS", "HTML", "CSS"],
+        "tags": ["ReactJS", "HTML", "CSS", "Javascript"],
         "imageDetails": [
           "ikibill-dashboard.png",
           "ikibill-dashboard-2.png",
@@ -116,10 +112,10 @@
       },
       {
         "title": "IKI Aku",
-        "description": "IKI Aku mobile apps with react native",
+        "description": "IKI Aku is an application to ease you to transfers your money to all banks in Indonesia safely. Transaction can be done anytime, anywhere. With a strong partnership with local banks in Taiwan, IKI Aku provides remittance service for foreign workers to send money to their relatives in Indonesia.",
         "image": "iki-aku-collapsed.png",
         "type": "mobile",
-        "tags": ["React Native", "Android", "IOS"],
+        "tags": ["React Native", "Android", "IOS", "Javascript"],
         "imageDetails": [
           "iki-aku.png",
           "iki-aku-2.png",
@@ -129,10 +125,10 @@
       },
       {
         "title": "IKI Mitra",
-        "description": "IKI Mitra mobile apps with react native",
+        "description": "IKI Mitra is an electronic platform and business solution for Warung, BPR, Cooperatives, BUMDES, and Communities which we refer to as 'Mitra IKI'. IKI Mitra facilitates its users to do business and earn promising income with 4 business pillars: PPOB, Bank Transfer, Remittance and P2P Landing. IKI Mitra mobile apps created with react native",
         "image": "iki-mitra-collapsed.png",
         "type": "mobile",
-        "tags": ["React Native", "Android", "IOS"],
+        "tags": ["React Native", "Android", "IOS", "Javascript"],
         "imageDetails": [
           "iki-mitra-1.jpeg",
           "iki-mitra-2.jpeg",
@@ -142,10 +138,10 @@
       },
       {
         "title": "Fatan Online Bookstore",
-        "description": "Final Project at Purwadhika Digital Technology School",
+        "description": "Fatan Online Bookstore is my Final Project at Purwadhika Digital Technology School.",
         "image": "fatanbookstore.png",
         "type": "web",
-        "tags": ["ReactJS", "HTML", "CSS"],
+        "tags": ["ReactJS", "HTML", "CSS", "Javascript"],
         "imageDetails": ["fatanbookstore.png"]
       }
     ]
