@@ -8,6 +8,10 @@ import Footer from "./pages/footer/footer-section";
 import Header from "./pages/header/header-section";
 import Portfolio from "./pages/projects/projects-section";
 import Resume from "./pages/resume/resume-section";
+import ReactGA from "react-ga";
+
+ReactGA.initialize("UA-149628675-1");
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 init(process.env.REACT_APP_USER_ID_EMAILJS);
 
