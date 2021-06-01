@@ -16,7 +16,7 @@ const FooterComponent = ({ data }) => {
         <div className="twelve columns">
           <ul className="social-links">{networks(data.social)}</ul>
           <ul className="copyright">
-            <li>&copy; Copyright 2020 Fatan Aminullah</li>
+            <li>&copy; Copyright 2021 Fatan Aminullah</li>
           </ul>
         </div>
         <div id="go-top">

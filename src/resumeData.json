@@ -143,6 +143,19 @@
         "type": "web",
         "tags": ["ReactJS", "HTML", "CSS", "Javascript"],
         "imageDetails": ["fatanbookstore.png"]
+      },
+      {
+        "title": "Wibowo Company Website",
+        "description": "Company Profile Website for Wibowo and Company",
+        "image": "wibowo-company.png",
+        "type": "web",
+        "tags": ["ReactJS", "HTML", "CSS", "Javascript"],
+        "imageDetails": [
+          "wibowo-company.png",
+          "wibowo-company-1.png",
+          "wibowo-company-2.png",
+          "wibowo-company-3.png"
+        ]
       }
     ]
   }
