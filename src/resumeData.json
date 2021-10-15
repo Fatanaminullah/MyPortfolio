@@ -4,6 +4,7 @@
     "description": [
       "Software Developer",
       "Frontend Developer",
+      "Frontend Web Developer",
       "React Developer",
       "React Native Developer"
     ],
@@ -67,9 +68,15 @@
     ],
     "work": [
       {
+        "company": "PT. Antikode Desain Eksperensia",
+        "title": "Frontend Web Developer",
+        "years": "August 2021 - Present",
+        "description": "Working in a team to build a beautiful website for our client from various industry, to invent their websites user experiences"
+      },
+      {
         "company": "PT. Emporia Digital Raya",
         "title": "Frontend Developer",
-        "years": "August 2020 - Present",
+        "years": "August 2020 - August 2021",
         "description": "Working in a team to build Web and Mobile Application using ReactJS and React Native Framework. Implement a Responsive Web and Mobile Application for modern financial technology application and build a lot of products to support Indonesian SME's through financial technology (fintech)."
       },
       {
