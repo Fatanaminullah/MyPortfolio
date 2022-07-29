@@ -10,7 +10,7 @@
     ],
     "profilePicture": "profilepic.png",
     "darkBg": "testimonials-bg.jpg",
-    "bio": "My name is Fatan Aminullah, i'm a 20 years old Software Developer. Now i'm working at PT. Emporia Digital as a Frontend Developer. I'm using ReactJS to build a Web Application and React Native to build a Mobile Application. I started my journey as a Professional Programmer in 2019, but I've started introducing myself to programming since I was in junior high school ",
+    "bio": "My name is Fatan Aminullah, i'm a 20 years old Software Developer. Now i'm working at PT. Antikode Desain Eksperensia as a Frontend Developer. I'm using ReactJS and NextJS to build a Web Application and React Native to build a Mobile Application. I started my journey as a Professional Programmer in 2019, but I've started introducing myself to programming since I was in junior high school ",
     "contactMessage": "Want to discuss something? Feel free to contact me!",
     "email": "fatan.aminullah.j@gmail.com",
     "phone": "082113705067",
@@ -23,7 +23,7 @@
     "social": [
       {
         "name": "linkedin",
-        "url": "https://www.linkedin.com/in/fatan-aminullah-9172b718b/",
+        "url": "https://www.linkedin.com/in/fatan-aminullah/",
         "className": "fa fa-linkedin"
       },
       {
@@ -89,6 +89,70 @@
   },
   "portfolio": {
     "projects": [
+      {
+        "title": "Mindblowon Minting Website",
+        "description": "Mindblowon is an NFT Project from the creators of Tahilalats, Lickpalik of Mindblowon studio.",
+        "image": "mb-1.png",
+        "type": "web",
+        "tags": ["Next JS", "ReactJS", "HTML", "SASS", "Javascript", "WEB3", "NFT"],
+        "imageDetails": ["mb-1.png", "mb-2.png"]
+      },
+      {
+        "title": "Avarik Saga",
+        "description": "Avarik Saga is a chronicle of 8,888 generative NFT personas depicting Knights, Archers, and Wizards from 4 clashing factions, each a unique combination of over 400+ uniquely hand-drawn traits.",
+        "image": "avarik-1.png",
+        "type": "web",
+        "tags": ["Next JS", "ReactJS", "HTML", "SASS", "Javascript", "WEB3", "NFT"],
+        "imageDetails": ["avarik-1.png", "avarik-2.png", "avarik-3.png"]
+      },
+      {
+        "title": "Shark Outlaw Squad",
+        "description": "Shark Outlaw Squad (SOS) is a collection of 7,777 crime-themed shark NFT featuring two opposing squads: Justice and Outlaw.",
+        "image": "sos-1.png",
+        "type": "web",
+        "tags": ["Next JS", "ReactJS", "HTML", "SASS", "Javascript", "WEB3", "NFT"],
+        "imageDetails": ["sos-1.png", "sos-2.png", "sos-3.png"]
+      },
+      {
+        "title": "Karafuru Ecommerce",
+        "description": "Karafuru is home to 5,555 generative arts where colors reign supreme. Leave the drab reality and enter the world of Karafuru by Museum of Toys",
+        "image": "kara-ecomm-1.png",
+        "type": "web",
+        "tags": ["Next JS", "ReactJS", "HTML", "SASS", "Javascript", "WEB3", "NFT", "E - Commerce"],
+        "imageDetails": ["kara-ecomm-1.png", "kara-ecomm-2.png", "kara-ecomm-3.png"]
+      },
+      {
+        "title": "Legit Group Website",
+        "description": "Legit Group is a multi-brand cloud kitchen conceptor and operator. By better understanding customer perception and implementation of technology, we aim to maximise utilisation of kitchen resources, control food costs through better predictive modelling of customer demands in order to boost food deliveries more scientifically.",
+        "image": "legit-1.png",
+        "type": "web",
+        "tags": ["Next JS", "ReactJS", "HTML", "SASS", "Javascript"],
+        "imageDetails": ["legit-1.png", "legit-2.png", "legit-3.png"]
+      },
+      {
+        "title": "Sania Website",
+        "description": "Company Profile for PT SARI AGROTAMA PERSADA (Sania)",
+        "image": "sania-1.png",
+        "type": "web",
+        "tags": ["Next JS", "ReactJS", "HTML", "SASS", "Javascript"],
+        "imageDetails": ["sania-1.png", "sania-2.png", "sania-3.png"]
+      },
+      {
+        "title": "Tokio Marine Indonesia",
+        "description": "Tokio Marine Indonesia adalah bagian dari Tokio Marine Holdings, perusahaan asuransi umum TERBESAR dari Jepang, berdasarkan Fortune 500 tahun 2021.",
+        "image": "tmi-1.png",
+        "type": "web",
+        "tags": ["Next JS", "ReactJS", "HTML", "SASS", "Javascript"],
+        "imageDetails": ["tmi-1.png", "tmi-2.png", "tmi-3.png"]
+      },
+      {
+        "title": "Union Group Website",
+        "description": "The Union Group is committed to providing its customers a great experience by offering them high quality food, beverage and wine, in addition to friendly and knowledgeable service in a warm, casual but thoughtfully designed setting",
+        "image": "union-1.png",
+        "type": "web",
+        "tags": ["Next JS", "ReactJS", "HTML", "SASS", "Javascript"],
+        "imageDetails": ["union-1.png", "union-2.png", "union-3.png"]
+      },
       {
         "title": "Pocketbank Portal Web Admin",
         "description": "Pocketbank Portal Web Admin is a Dashboard page for pocketbank administrator",

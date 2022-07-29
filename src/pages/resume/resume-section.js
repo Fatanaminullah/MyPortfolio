@@ -9,11 +9,20 @@ import JavascriptIcon from "../../assets/img/javascript-icon.png";
 import NodejsIcon from "../../assets/img/nodejs-icon.png";
 import ReactIcon from "../../assets/img/react-icon.png";
 import SqlIcon from "../../assets/img/sql-icon.png";
+import NextIcon from "../../assets/img/nextjs-icon.png";
+import GatsbyIcon from "../../assets/img/gatsby-icon.png";
+import Web3Icon from "../../assets/img/web3-icon.png";
+import SassIcon from "../../assets/img/sass-icon.png";
+
 const ResumeComponent = ({ data }) => {
   const items = [
     <img style={{ height: 150 }} src={ReactIcon} />,
     <img style={{ height: 150 }} src={JavascriptIcon} />,
     <img style={{ height: 150 }} src={HtmlIcon} />,
+    <img style={{ height: 150 }} src={NextIcon} />,
+    <img style={{ height: 150 }} src={GatsbyIcon} />,
+    <img style={{ height: 150 }} src={Web3Icon} />,
+    <img style={{ height: 150 }} src={SassIcon} />,
     <img style={{ height: 150 }} src={CssIcon} />,
     <img style={{ height: 150 }} src={GitIcon} />,
     <img style={{ height: 150 }} src={NodejsIcon} />,
