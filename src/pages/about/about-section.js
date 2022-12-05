@@ -20,7 +20,7 @@ const AboutComponent = ({ data }) => {
             }`}
             ref={domRef}
             src={`images/${profilePicture}`}
-            alt="Nordic Giant Profile Pic"
+            alt="Profile Pic"
           />
         </div>
         <div
