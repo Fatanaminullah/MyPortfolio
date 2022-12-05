@@ -85,8 +85,9 @@ const ProjectsComponent = ({ data }) => {
                   selectedProject &&
                   selectedProject.imageDetails.map((item) => (
                     <img
-                      // style={{ minWidth: 400, objectFit: "cover" }}
-                      width="100%"
+                      style={{ objectFit: "contain" }}
+                      width={500}
+                      height={300}
                       src={`images/portfolio/${item}`}
                       alt={item}
                     />
@@ -95,7 +96,7 @@ const ProjectsComponent = ({ data }) => {
                 infinite
                 autoWidth
                 autoHeight
-                autoPlay={false}
+                autoPlay
                 animationType="fadeout" 
                 disableButtonsControls
                 // paddingLeft={0}
