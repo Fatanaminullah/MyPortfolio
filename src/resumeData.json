@@ -10,7 +10,7 @@
     ],
     "profilePicture": "profilepic.png",
     "darkBg": "testimonials-bg.jpg",
-    "bio": "My name is Fatan Aminullah, i'm a 20 years old Software Developer. Now i'm working at PT. Antikode Desain Eksperensia as a Frontend Developer. I'm using ReactJS and NextJS to build a Web Application and React Native to build a Mobile Application. I started my journey as a Professional Programmer in 2019, but I've started introducing myself to programming since I was in junior high school ",
+    "bio": "My name is Fatan Aminullah, i'm a 22 years old Software Developer. Now i'm working at PT. Antikode Desain Eksperiensia as a Frontend Developer. I'm using ReactJS and NextJS to build a Web Application and React Native to build a Mobile Application. I started my journey as a Professional Programmer in 2019, but I've started introducing myself to programming since I was in junior high school ",
     "contactMessage": "Want to discuss something? Feel free to contact me!",
     "email": "fatan.aminullah.j@gmail.com",
     "phone": "082113705067",
@@ -90,114 +90,138 @@
   "portfolio": {
     "projects": [
       {
-        "title": "Mindblowon Minting Website",
-        "description": "Mindblowon is an NFT Project from the creators of Tahilalats, Lickpalik of Mindblowon studio.",
-        "image": "mb-1.png",
+        "title": "Sidekast Stage-1-1 Minting Website",
+        "description": "Sidekast is an NFT Project created by kid bash. Sidekast Has 6,400 Unique Pieces Of 3d Rendered Generative Images. Created With A Toyetic Approach To The Visual Design To Invoke A Fun Nostalgic Feeling To It, As If Collecting Toys As A Kid.",
+        "image": "sidekast-1.jpg",
         "type": "web",
         "tags": ["Next JS", "ReactJS", "HTML", "SASS", "Javascript", "WEB3", "NFT"],
-        "imageDetails": ["mb-1.png", "mb-2.png"]
+        "imageDetails": ["sidekast-1.jpg", "sidekast-2.jpg","sidekast-3.jpg"]
+      },
+      {
+        "title": "Karafuru x HYPEBEAST x atmos Minting Website",
+        "description": "The 3D Karafuru collection consists of high-end 3D avatars that ensure all of our Genesis Karafuru holders can be Metaverse ready. Co-developed with HYPEBEAST and atmos, these 15,555 NFT tokens bring the epitome of lifestyle culture, passion, and influence into the Web3 Metaverse.",
+        "image": "karafuru-3d-1.jpg",
+        "type": "web",
+        "tags": ["Next JS", "ReactJS", "HTML", "SASS", "Javascript", "WEB3", "NFT"],
+        "imageDetails": ["karafuru-3d-1.jpg","karafuru-3d-2.jpeg","karafuru-3d-3.jpg","karafuru-3d-4.jpg"]
+      },
+      {
+        "title": "Mindblowon Minting Website",
+        "description": "Mindblowon is an NFT Project from the creators of Tahilalats, Lickpalik of Mindblowon studio.",
+        "image": "mb-1.jpg",
+        "type": "web",
+        "tags": ["Next JS", "ReactJS", "HTML", "SASS", "Javascript", "WEB3", "NFT"],
+        "imageDetails": ["mb-1.jpg", "mb-2.jpg"]
       },
       {
         "title": "Avarik Saga",
         "description": "Avarik Saga is a chronicle of 8,888 generative NFT personas depicting Knights, Archers, and Wizards from 4 clashing factions, each a unique combination of over 400+ uniquely hand-drawn traits.",
-        "image": "avarik-1.png",
+        "image": "avarik-1.jpg",
         "type": "web",
         "tags": ["Next JS", "ReactJS", "HTML", "SASS", "Javascript", "WEB3", "NFT"],
-        "imageDetails": ["avarik-1.png", "avarik-2.png", "avarik-3.png"]
+        "imageDetails": ["avarik-1.jpg", "avarik-2.jpg", "avarik-3.jpg"]
       },
       {
         "title": "Shark Outlaw Squad",
         "description": "Shark Outlaw Squad (SOS) is a collection of 7,777 crime-themed shark NFT featuring two opposing squads: Justice and Outlaw.",
-        "image": "sos-1.png",
+        "image": "sos-1.jpg",
         "type": "web",
         "tags": ["Next JS", "ReactJS", "HTML", "SASS", "Javascript", "WEB3", "NFT"],
-        "imageDetails": ["sos-1.png", "sos-2.png", "sos-3.png"]
+        "imageDetails": ["sos-1.jpg", "sos-2.jpg", "sos-3.jpg"]
       },
       {
         "title": "Karafuru Ecommerce",
         "description": "Karafuru is home to 5,555 generative arts where colors reign supreme. Leave the drab reality and enter the world of Karafuru by Museum of Toys",
-        "image": "kara-ecomm-1.png",
+        "image": "kara-ecomm-1.jpg",
         "type": "web",
         "tags": ["Next JS", "ReactJS", "HTML", "SASS", "Javascript", "WEB3", "NFT", "E - Commerce"],
-        "imageDetails": ["kara-ecomm-1.png", "kara-ecomm-2.png", "kara-ecomm-3.png"]
+        "imageDetails": ["kara-ecomm-1.jpg", "kara-ecomm-2.jpg", "kara-ecomm-3.jpg"]
       },
       {
         "title": "Legit Group Website",
         "description": "Legit Group is a multi-brand cloud kitchen conceptor and operator. By better understanding customer perception and implementation of technology, we aim to maximise utilisation of kitchen resources, control food costs through better predictive modelling of customer demands in order to boost food deliveries more scientifically.",
-        "image": "legit-1.png",
+        "image": "legit-1.jpg",
         "type": "web",
         "tags": ["Next JS", "ReactJS", "HTML", "SASS", "Javascript"],
-        "imageDetails": ["legit-1.png", "legit-2.png", "legit-3.png"]
+        "imageDetails": ["legit-1.jpg", "legit-2.jpg", "legit-3.jpg"]
       },
       {
         "title": "Sania Website",
         "description": "Company Profile for PT SARI AGROTAMA PERSADA (Sania)",
-        "image": "sania-1.png",
+        "image": "sania-1.jpg",
         "type": "web",
         "tags": ["Next JS", "ReactJS", "HTML", "SASS", "Javascript"],
-        "imageDetails": ["sania-1.png", "sania-2.png", "sania-3.png"]
+        "imageDetails": ["sania-1.jpg", "sania-2.jpg", "sania-3.jpg"]
       },
       {
         "title": "Tokio Marine Indonesia",
         "description": "Tokio Marine Indonesia adalah bagian dari Tokio Marine Holdings, perusahaan asuransi umum TERBESAR dari Jepang, berdasarkan Fortune 500 tahun 2021.",
-        "image": "tmi-1.png",
+        "image": "tmi-1.jpg",
         "type": "web",
         "tags": ["Next JS", "ReactJS", "HTML", "SASS", "Javascript"],
-        "imageDetails": ["tmi-1.png", "tmi-2.png", "tmi-3.png"]
+        "imageDetails": ["tmi-1.jpg", "tmi-2.jpg", "tmi-3.jpg"]
       },
       {
         "title": "Union Group Website",
         "description": "The Union Group is committed to providing its customers a great experience by offering them high quality food, beverage and wine, in addition to friendly and knowledgeable service in a warm, casual but thoughtfully designed setting",
-        "image": "union-1.png",
+        "image": "union-1.jpg",
         "type": "web",
         "tags": ["Next JS", "ReactJS", "HTML", "SASS", "Javascript"],
-        "imageDetails": ["union-1.png", "union-2.png", "union-3.png"]
+        "imageDetails": ["union-1.jpg", "union-2.jpg", "union-3.jpg"]
+      },
+      {
+        "title": "Art Generative Website QC",
+        "description": "This website is for internal and client only. Used to QC generated metadata and art before NFT launching.",
+        "image": "ag-1.jpg",
+        "type": "web",
+        "tags": ["Next JS", "ReactJS", "HTML", "SASS", "Javascript", "WEB3", "NFT"],
+        "imageDetails": ["ag-1.jpg", "ag-2.jpg", "ag-3.jpg", "ag-4.jpg"]
       },
       {
         "title": "Pocketbank Portal Web Admin",
         "description": "Pocketbank Portal Web Admin is a Dashboard page for pocketbank administrator",
-        "image": "pocket-web.png",
+        "image": "pocket-web.jpg",
         "type": "web",
         "tags": ["ReactJS", "HTML", "CSS", "Javascript"],
-        "imageDetails": ["pocket-web.png"]
+        "imageDetails": ["pocket-web.jpg"]
       },
       {
         "title": "Pocketbank Mobile Customer",
         "description": "Pocketbank Mobile Customer is a Mobile application for customer or mobile banking application built with pocketbank system by anabatic",
-        "image": "pocket-customer-collapsed.png",
+        "image": "pocket-customer-collapsed.jpg",
         "type": "mobile",
         "tags": ["React Native", "Android", "Javascript"],
-        "imageDetails": ["pocket-customer-collapsed.png"]
+        "imageDetails": ["pocket-customer-collapsed.jpg"]
       },
       {
         "title": "IKI Bills Dashboard",
         "description": "IKI Bills Dashboard is a Dashboard page for iki bill administrator. Iki Bills is a system to pay your estate management bills.",
-        "image": "ikibill-dashboard.png",
+        "image": "ikibill-dashboard.jpg",
         "type": "web",
         "tags": ["ReactJS", "HTML", "CSS", "Javascript"],
         "imageDetails": [
-          "ikibill-dashboard.png",
-          "ikibill-dashboard-2.png",
-          "ikibill-dashboard-3.png"
+          "ikibill-dashboard.jpg",
+          "ikibill-dashboard-2.jpg",
+          "ikibill-dashboard-3.jpg"
         ]
       },
       {
         "title": "IKI Aku",
         "description": "IKI Aku is an application to ease you to transfers your money to all banks in Indonesia safely. Transaction can be done anytime, anywhere. With a strong partnership with local banks in Taiwan, IKI Aku provides remittance service for foreign workers to send money to their relatives in Indonesia.",
-        "image": "iki-aku-collapsed.png",
+        "image": "iki-aku-collapsed.jpg",
         "type": "mobile",
         "tags": ["React Native", "Android", "IOS", "Javascript"],
         "imageDetails": [
-          "iki-aku.png",
-          "iki-aku-2.png",
-          "iki-aku-3.png",
-          "iki-aku-4.png"
+          "iki-aku.jpg",
+          "iki-aku-2.jpg",
+          "iki-aku-3.jpg",
+          "iki-aku-4.jpg"
         ]
       },
       {
         "title": "IKI Mitra",
         "description": "IKI Mitra is an electronic platform and business solution for Warung, BPR, Cooperatives, BUMDES, and Communities which we refer to as 'Mitra IKI'. IKI Mitra facilitates its users to do business and earn promising income with 4 business pillars: PPOB, Bank Transfer, Remittance and P2P Landing. IKI Mitra mobile apps created with react native",
-        "image": "iki-mitra-collapsed.png",
+        "image": "iki-mitra-collapsed.jpg",
         "type": "mobile",
         "tags": ["React Native", "Android", "IOS", "Javascript"],
         "imageDetails": [
@@ -210,22 +234,22 @@
       {
         "title": "Fatan Online Bookstore",
         "description": "Fatan Online Bookstore is my Final Project at Purwadhika Digital Technology School.",
-        "image": "fatanbookstore.png",
+        "image": "fatanbookstore.jpg",
         "type": "web",
         "tags": ["ReactJS", "HTML", "CSS", "Javascript"],
-        "imageDetails": ["fatanbookstore.png"]
+        "imageDetails": ["fatanbookstore.jpg"]
       },
       {
         "title": "Wibowo Company Website",
         "description": "Company Profile Website for Wibowo and Company",
-        "image": "wibowo-company.png",
+        "image": "wibowo-company.jpeg",
         "type": "web",
         "tags": ["ReactJS", "HTML", "CSS", "Javascript"],
         "imageDetails": [
-          "wibowo-company.png",
-          "wibowo-company-1.png",
-          "wibowo-company-2.png",
-          "wibowo-company-3.png"
+          "wibowo-company.jpeg",
+          "wibowo-company-1.jpeg",
+          "wibowo-company-2.jpeg",
+          "wibowo-company-3.jpeg"
         ]
       }
     ]

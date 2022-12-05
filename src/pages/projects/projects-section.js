@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import Modal from "react-modal";
 import "react-tabs/style/react-tabs.css";
 import AliceCarousel from "react-alice-carousel";
@@ -58,9 +57,8 @@ const ProjectsComponent = ({ data }) => {
   const renderTabButton = (list) => {
     return list.map((item) => (
       <div
-        className={`btn fil-cat tab-button ${
-          selectedTab === item ? "selected" : ""
-        }`}
+        className={`btn fil-cat tab-button ${selectedTab === item ? "selected" : ""
+          }`}
         href=""
         data-rel={item}
         onClick={() => setSelectedTab(item)}
@@ -78,7 +76,7 @@ const ProjectsComponent = ({ data }) => {
         style={customStyles}
       >
         <div className="row popup-modal">
-          <div className="six columns">
+          <div className="eight columns">
             {selectedProject.type === "web" ? (
               <AliceCarousel
                 autoPlayInterval={2000}
@@ -87,28 +85,35 @@ const ProjectsComponent = ({ data }) => {
                   selectedProject &&
                   selectedProject.imageDetails.map((item) => (
                     <img
-                      style={{ width: 400 }}
+                      style={{ objectFit: "contain" }}
+                      width={500}
+                      height={300}
                       src={`images/portfolio/${item}`}
                       alt={item}
                     />
                   ))
                 }
-                paddingLeft={0}
-                paddingRight={0}
-                autoPlay
                 infinite
+                autoWidth
+                autoHeight
+                autoPlay
+                animationType="fadeout" 
                 disableButtonsControls
-                responsive={{
-                  0: { items: 1 },
-                  568: { items: 1 },
-                  1026: { items: 1 },
-                }}
+                // paddingLeft={0}
+                // paddingRight={0}
+                // responsive={{
+                //   0: { items: 1 },
+                //   576: { items: 1 },
+                //   768: { items: 1 },
+                //   992: { items: 1 },
+                //   1200: { items: 1 },
+                // }}
               />
             ) : (
               <img src={`images/portfolio/${selectedProject.image}`} />
             )}
           </div>
-          <div className="six columns">
+          <div className="four columns">
             <div className="description-box">
               <div>
                 <h4>{selectedProject.title}</h4>
